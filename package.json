@@ -1,0 +1,40 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --disable-host-check --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "axios": "^0.19",
+        "bootstrap": "^4.0.0",
+        "cross-env": "^7.0",
+        "jquery": "^3.2",
+        "laravel-mix": "^5.0.1",
+        "lodash": "^4.17.19",
+        "popper.js": "^1.12",
+        "resolve-url-loader": "^3.1.0",
+        "sass": "^1.15.2",
+        "sass-loader": "^8.0.0",
+        "vue-template-compiler": "^2.6.12"
+    },
+    "dependencies": {
+        "@tomtom-international/web-sdk-maps": "^5.64.0",
+        "@tomtom-international/web-sdk-plugin-minimap": "^1.0.5",
+        "@tomtom-international/web-sdk-plugin-pancontrols": "^1.0.12",
+        "@tomtom-international/web-sdk-plugin-searchbox": "^2.24.2",
+        "@tomtom-international/web-sdk-plugin-zoomcontrols": "^1.0.11",
+        "@tomtom-international/web-sdk-services": "^5.64.0",
+        "algoliasearch": "^4.5.1",
+        "bootstrap": "^4.5.2",
+        "git": "^0.1.5",
+        "handlebars": "^4.7.6",
+        "jquery": "^3.5.1",
+        "places.js": "^1.19.0",
+        "popper.js": "^1.16.1"
+    }
+}
